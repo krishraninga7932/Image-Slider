@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #14b8a6;
+  color: white;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: #14b8a5b4;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px !important;
+  color: white;
+  font-weight: bold;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #14b8a6 !important;
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  transform: scale(0.9);
+  transition: all linear 0.2s;
+}
+
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 22px;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 10px !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 22px;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 30px;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 25px !important;
+  }
+}
